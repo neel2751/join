@@ -96,7 +96,11 @@ body {
   text-transform: capitalize;
   color: black;
 }
-
+img {
+  position: absolute;
+  opacity: 1;
+  transition: 2s linear;
+}
 .main_header .user {
   width: 90vh;
   height: 70vh;

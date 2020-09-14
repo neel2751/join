@@ -6,6 +6,19 @@ const bulb = document.querySelector("#click_bulb");
 bulb.addEventListener("click", () => {
   //   var x = document.getElementsByClassName("nav-item");
 
+  const start = () => {
+    setTimeout(function () {
+      confetti.start();
+    }, 1000);
+  };
+
+  const end = () => {
+    setTimeout(function () {
+      confetti.stop();
+    }, 5000);
+  };
+  start();
+  end();
   // Body background color chnage of using toggle like that
   var body = document.querySelector("body");
   if (body.style.backgroundColor == "white") {
