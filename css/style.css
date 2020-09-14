@@ -314,7 +314,7 @@ body {
     justify-content: center;
   }
   .main_header_text {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     align-items: center;
   }
