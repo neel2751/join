@@ -158,6 +158,9 @@ img {
 #btn2 {
   margin-left: 2rem;
 }
+
+/* Bottom Scroll */
+
 /* Dark Theam Start */
 .navbar-nav .nav-item .bg {
   color: black;
@@ -210,6 +213,7 @@ img {
   z-index: 1;
 }
 /* for small devices */
+
 @media only screen and (max-width: 600px) {
   #user {
     display: none;
@@ -306,6 +310,9 @@ img {
 @media only screen and (max-width: 1200px) {
   #user {
     display: none;
+  }
+  .main_header_text {
+    height: 40vh;
   }
   .big {
     display: none;

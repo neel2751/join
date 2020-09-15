@@ -10,7 +10,7 @@ const start = () => {
 const end = () => {
   setTimeout(function () {
     confetti.stop();
-  }, 3000);
+  }, 2000);
 };
 
 start();

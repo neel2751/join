@@ -1,21 +1,23 @@
 //Modify the src attribute of the image with the ID "myImage"
 
-// const nav = document.querySelector(".nav-link");
 const bulb = document.querySelector("#click_bulb");
 
 bulb.addEventListener("click", () => {
-  //   var x = document.getElementsByClassName("nav-item");
+  var con = new Audio();
+
+  con.src = "audio/confeti.mp3";
+  con.play();
 
   const start = () => {
     setTimeout(function () {
       confetti.start();
-    }, 1000);
+    }, 500);
   };
 
   const end = () => {
     setTimeout(function () {
       confetti.stop();
-    }, 5000);
+    }, 2000);
   };
   start();
   end();
@@ -61,9 +63,3 @@ bulb.addEventListener("click", () => {
   var bulbcolor = document.querySelector(".bulb");
   bulbcolor.classList.toggle("bulbcolor");
 });
-// bulb.addEventListener("click", () => {
-//   nav.classList.add("bg");
-// });
-// document.getElementById("user").src = "img/user-light.svg";
-
-// if user name not empty to set the user name and class to remove and innerhtml to get some data to transfer to name and empty name to set
