@@ -70,10 +70,10 @@ const paths = document.querySelector(".path");
 const arrows = document.querySelector(".arrow");
 
 function arrow() {
-  // console.log(this.scrollY);
+  console.log(this.scrollY);
   if (
     this.scrollY > this.innerHeight / 2 ||
-    this.scrollY > 50 / 2 ||
+    this.scrollY > 280 ||
     this.scrollY > 360
   ) {
     // console.log("active");

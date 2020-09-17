@@ -398,9 +398,9 @@ img {
   .paths {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    animation: dash 2.7s linear forwards;
-    animation-iteration-count: 1;
-    animation-delay: 0.5s;
+    animation: dash 2.5s linear forwards;
+    /* animation-iteration-count: 1; */
+    animation-delay: 0.1s;
   }
   @keyframes dash {
     to {
