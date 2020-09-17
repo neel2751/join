@@ -63,3 +63,39 @@ bulb.addEventListener("click", () => {
   var bulbcolor = document.querySelector(".bulb");
   bulbcolor.classList.toggle("bulbcolor");
 });
+
+// Scroll Method
+const arrowani = document.querySelector(".graph__wrapper");
+const paths = document.querySelector(".path");
+const arrows = document.querySelector(".arrow");
+
+function arrow() {
+  // console.log(this.scrollY);
+  if (
+    this.scrollY > this.innerHeight / 2 ||
+    this.scrollY > 50 / 2 ||
+    this.scrollY > 360
+  ) {
+    // console.log("active");
+
+    arrowani.classList.add("active");
+
+    paths.classList.remove("path");
+
+    paths.classList.add("paths");
+
+    arrows.classList.add("arrows");
+    arrows.classList.remove("arrow");
+    document.querySelectorAll("animateMotion").forEach((element) => {
+      element.beginElement(1);
+    });
+  } else {
+    arrowani.classList.remove("active");
+    paths.classList.remove("paths");
+    paths.classList.add("path");
+    arrows.classList.remove("arrows");
+    arrows.classList.add("arrow");
+  }
+}
+
+window.addEventListener("scroll", arrow);
