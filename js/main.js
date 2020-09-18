@@ -78,7 +78,7 @@ function arrow() {
   // ) {
   if (
     (this.scrollY > 306 && this.scrollY < 426) ||
-    (this.scrollY > 306 && this.scrollY < 313)
+    (this.scrollY > 310 && this.scrollY < 313)
   ) {
     // console.log("active");
 
