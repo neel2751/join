@@ -69,6 +69,10 @@ bulb.addEventListener("click", () => {
 const line = document.querySelector(".line");
 const arr = document.querySelector(".arro");
 
+// cricle
+const firstcircle = document.querySelector(".fic");
+const secondcircle = document.querySelector(".sec");
+
 function arrow() {
   // console.log(this.scrollY);
   // if (
@@ -77,14 +81,21 @@ function arrow() {
   //   this.scrollY > 360
   // ) {
   if (
-    (this.scrollY > 761 && this.scrollY < 764) ||
-    // (this.scrollY > 610 && this.scrollY < 617) ||
+    // (this.scrollY > 761 && this.scrollY < 764) ||
+    (this.scrollY > 425 && this.scrollY < 432) ||
     (this.scrollY > 250 && this.scrollY < 256) ||
-    (this.scrollY > 180 && this.scrollY < 185) ||
+    // (this.scrollY > 180 && this.scrollY < 185) ||
     (this.scrollY > 260 && this.scrollY < 273) ||
+    // (this.scrollY > 30 && this.scrollY < 38) ||
     (this.scrollY > 280 && this.scrollY < 299) ||
-    (this.scrollY > 310 && this.scrollY < 424)
+    (this.scrollY > 300 && this.scrollY < 424)
   ) {
+    firstcircle.classList.add("fics");
+    firstcircle.classList.remove("fic");
+
+    secondcircle.classList.add("secs");
+    secondcircle.classList.remove("sec");
+
     // console.log("active");
     arr.classList.add("arros");
     arr.classList.remove("arro");
@@ -92,6 +103,12 @@ function arrow() {
     line.classList.add("lines");
     line.classList.remove("line");
   } else {
+    firstcircle.classList.remove("fics");
+    firstcircle.classList.add("fic");
+
+    secondcircle.classList.remove("secs");
+    secondcircle.classList.add("sec");
+
     arr.classList.remove("arros");
     arr.classList.add("arro");
 

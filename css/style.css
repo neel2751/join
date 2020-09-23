@@ -287,6 +287,11 @@ img {
 /* Bottom Scroll End */
 
 /* Arrow Animation */
+.svgdc {
+  position: absolute;
+  top: -6rem;
+  right: 16rem;
+}
 svg {
   /* transform: translate(-35.1813px, 15px) rotate(19.7781deg) scale(0.8); */
   transform: translate(240.1813px, 15px) rotate(19.7781deg) scale(0.8);
@@ -294,6 +299,28 @@ svg {
   /* height: 125px; */
   /* transform: translate(-50.8187px, 10px) rotate(19.7781deg) scale(0.8); */
 }
+.fic {
+  stroke-dashoffset: 247;
+  stroke-dasharray: 247;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+.sec {
+  stroke-dashoffset: 296;
+  stroke-dasharray: 296;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+/* scroll */
+.fics {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 247;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+.secs {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 296;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+/* scroll finish */
 .arro {
   stroke-dashoffset: 50;
   stroke-dasharray: 50;
@@ -400,6 +427,11 @@ svg {
   svg {
     transform: translate(-56.1813px, 15px) rotate(19.7781deg) scale(0.8);
     height: 70px;
+  }
+  #svgcir {
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
   }
 }
 
@@ -511,6 +543,11 @@ svg {
   svg {
     transform: translate(-25.8187px, 10px) rotate(19.7781deg) scale(0.8);
     height: 108px;
+  }
+  #svgcir {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
   }
 }
 @media only screen and (max-width: 1200px) {
