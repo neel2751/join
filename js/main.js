@@ -85,7 +85,7 @@ function arrow() {
     (this.scrollY > 425 && this.scrollY < 432) ||
     (this.scrollY > 250 && this.scrollY < 256) ||
     // (this.scrollY > 180 && this.scrollY < 185) ||
-    (this.scrollY > 260 && this.scrollY < 273) ||
+    (this.scrollY > 260 && this.scrollY < 277) ||
     // (this.scrollY > 30 && this.scrollY < 38) ||
     (this.scrollY > 280 && this.scrollY < 299) ||
     (this.scrollY > 300 && this.scrollY < 424)
