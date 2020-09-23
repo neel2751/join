@@ -65,41 +65,64 @@ bulb.addEventListener("click", () => {
 });
 
 // Scroll Method
-const arrowani = document.querySelector(".graph__wrapper");
-const paths = document.querySelector(".path");
-const arrows = document.querySelector(".arrow");
+
+const line = document.querySelector(".line");
+const arr = document.querySelector(".arro");
 
 function arrow() {
-  console.log(this.scrollY);
+  // console.log(this.scrollY);
   // if (
   //   this.scrollY > this.innerHeight / 2 ||
   //   this.scrollY > 280 ||
   //   this.scrollY > 360
   // ) {
   if (
-    (this.scrollY > 310 && this.scrollY < 426) ||
-    (this.scrollY > 310 && this.scrollY < 313)
+    (this.scrollY > 761 && this.scrollY < 764) ||
+    // (this.scrollY > 610 && this.scrollY < 617) ||
+    (this.scrollY > 250 && this.scrollY < 256) ||
+    (this.scrollY > 180 && this.scrollY < 185) ||
+    (this.scrollY > 260 && this.scrollY < 273) ||
+    (this.scrollY > 280 && this.scrollY < 299) ||
+    (this.scrollY > 310 && this.scrollY < 424)
   ) {
     // console.log("active");
+    arr.classList.add("arros");
+    arr.classList.remove("arro");
 
-    arrowani.classList.add("active");
-
-    paths.classList.remove("path");
-
-    paths.classList.add("paths");
-
-    arrows.classList.add("arrows");
-    arrows.classList.remove("arrow");
-    document.querySelectorAll("animateMotion").forEach((element) => {
-      element.beginElement(1);
-    });
+    line.classList.add("lines");
+    line.classList.remove("line");
   } else {
-    arrowani.classList.remove("active");
-    paths.classList.remove("paths");
-    paths.classList.add("path");
-    arrows.classList.remove("arrows");
-    arrows.classList.add("arrow");
+    arr.classList.remove("arros");
+    arr.classList.add("arro");
+
+    line.classList.remove("lines");
+    line.classList.add("line");
   }
 }
 
 window.addEventListener("scroll", arrow);
+
+// console.log("getTotalLength", triangle.getTotalLength());
+//
+// console.log(document.getElementById("shape").getTotalLength());
+// var list = document.querySelector(".style-module--arrow--2_ZsS path");
+// console.log(list);
+// var length = list.getTotalLength();
+// console.log(length);
+// list.style.strokeDashoffset = "0";
+
+// window.onload = function () {
+//   animatePath("#fi", "stroke-dashoffset 0.6s ease-in-out");
+//   animatePath("#se", "stroke-dashoffset 0.5s 0.5s ease-in-out");
+// };
+// for (var i = 0; i < list.length; i++) {
+//   var path = list[i],
+//     length = path.getTotalLength();
+
+//   path.style.strokeDasharray = length;
+//   path.style.strokeDashoffset = length;
+// }
+// console.log(list);
+
+// list.setAttribute("stroke-dashoffset", 0);
+// list.style.setAttribute("stroke-dashoffset", 0);
